@@ -50,7 +50,15 @@ a {
   overflow: hidden;
   /* box-shadow: 0 0 10px black ; */
   box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
-
+}
+@media (min-width:715px) {
+  .card {
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
 }
 .card img {
   max-width: 100%;
@@ -83,7 +91,7 @@ a {
   margin-bottom: 0;
 }
 .card div:nth-of-type(2) {
-  padding: 20px;
+  padding: 15px;
   border-radius: 5px;
   color: var(--Very-pale-blue);
   background-color: var(--Bright-blue);
